@@ -1,0 +1,4 @@
+#ifndef LIBTEST_HPP_INCLUDED_
+#define LIBTEST_HPP_INCLUDED_
+void output();
+#endif // LIBTEST_HPP_INCLUDED_

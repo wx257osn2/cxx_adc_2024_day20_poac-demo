@@ -1,0 +1,19 @@
+[package]
+name = "test_application"
+version = "0.1.0"
+authors = ["I <1091761+wx257osn2@users.noreply.github.com>"]
+edition = "20"
+
+[dependencies]
+libtest = { path = "../libtest" }
+
+[profile]
+cxxflags = ["-Wall", "-Werror", "-pedantic-errors"]
+
+[lint.cpplint]
+filters = [
+  "-legal/copyright",
+  "-build/header_guard",
+  "-whitespace",
+  "+whitespace/ending_newline"
+]

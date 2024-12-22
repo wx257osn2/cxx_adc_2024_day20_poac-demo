@@ -1,0 +1,16 @@
+[package]
+name = "libtest"
+version = "0.1.0"
+authors = ["I <1091761+wx257osn2@users.noreply.github.com>"]
+edition = "20"
+
+[profile]
+cxxflags = ["-Wall", "-Werror", "-pedantic-errors"]
+
+[lint.cpplint]
+filters = [
+  "-legal/copyright",
+  "-build/header_guard",
+  "-whitespace",
+  "+whitespace/ending_newline"
+]
